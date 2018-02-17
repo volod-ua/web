@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Prechu - Minimal Website</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- Styles for slider -->
+   <link rel="stylesheet" href="css/slider.css">
+
+   <!--[if lt IE 9]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+</head>
+<body>
+   <!-- HEADER -->
+   <header>
+      <div class="wrapper clearfix">
+         <div class="logo">
+            <!--<span>&ldquo;</span>-->
+            <a href="#">Prechu</a>
+         </div>
+         <nav>
+            <a href="#" id="pull">&#9776;</a>
+            <ul class="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <!-- SLIDER -->
+   <div class="slider">
+      <div id="slides" class="wrapper">
+         <div class="slide">
+            <div class="slide-img">
+               <img src="img/iphone.png" alt="">
+            </div>
+            <div class="slide-content">
+               <h2>Lorem Ipsum is simply</h2>
+               <p>dummy text of the<br>
+                  printing & typesetting</p>
+               <a href="#" class="slide-btn">Sign up now</a>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="slide-img">
+               <img src="img/iphone.png" alt="">
+            </div>
+            <div class="slide-content">
+               <h2>Lorem Ipsum is simply</h2>
+               <p>dummy text of the<br>
+                  printing & typesetting</p>
+               <a href="#" class="slide-btn">Sign up now</a>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="slide-img">
+               <img src="img/iphone.png" alt="">
+            </div>
+            <div class="slide-content">
+               <h2>Lorem Ipsum is simply</h2>
+               <p>dummy text of the<br>
+                  printing & typesetting</p>
+               <a href="#" class="slide-btn">Sign up now</a>
+            </div>
+         </div>
+
+         <a href="#" class="slidesjs-previous slidesjs-navigation"></a>
+         <a href="#" class="slidesjs-next slidesjs-navigation"></a>
+      </div>
+   </div>
+
+   <!-- MAIN -->
+   <main>
+      <!-- SERVICES -->
+      <div class="services wrapper clearfix">
+         <article>
+            <div class="service-img">
+               <img src="img/pencil.svg" alt="">
+            </div>
+            <div class="service-content">
+               <h2><a href="#">Contrary to popular</a></h2>
+               <p>Lorem Ipsum is not simply random text.
+                  It has roots in a piece </p>
+            </div>
+         </article>
+
+         <article>
+            <div class="service-img">
+               <img src="img/desktop.svg" alt="">
+            </div>
+            <div class="service-content">
+               <h2><a href="#">Contrary to popular</a></h2>
+               <p>Lorem Ipsum is not simply random text.
+                  It has roots in a piece </p>
+            </div>
+         </article>
+
+         <article>
+            <div class="service-img">
+               <img src="img/basket.svg" alt="">
+            </div>
+            <div class="service-content">
+               <h2><a href="#">Contrary to popular</a></h2>
+               <p>Lorem Ipsum is not simply random text.
+                  It has roots in a piece </p>
+            </div>
+         </article>
+      </div>
+
+      <!-- SHOPPING CART -->
+      <section class="shopping wrapper clearfix">
+         <h2>The Shopping cart</h2>
+         <div class="shop-img">
+            <img src="img/cart.png" alt="">
+         </div>
+         <div class="shop-content">
+            <h3>Some Bullet text here</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+               Lorem Ipsum has been the industry's standard dummy text ever
+               When an unknown printer took a galley of type and scrambled
+               It to make a type specimen book. It has survived not only five centuries
+               But also the leap into electronic typesetting,
+               Remaining essentially unchanged. It was popularised
+               The release of Letraset sheets containing Lorem Ipsum passages</p>
+         </div>
+      </section>
+   </main>
+
+   <!-- FOOTER -->
+   <footer class="wrapper">
+      <p>Copyright &copy; 2012-2013 cssauthor.com</p>
+   </footer>
+
+   <!-- Scripts for slider -->
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="js/jquery.slides.min.js"></script>
+   <script>
+       $(function(){
+           $("#slides").slidesjs({
+               pagination: { active: false },
+               navigation: { active: false },
+               height: 500
+           });
+       });
+   </script>
+
+   <!-- Script for adaptive menu -->
+   <script>
+       $(function() {
+           var pull        = $('#pull'),
+               menu        = $('ul.menu'),
+               menuHeight  = menu.height();
+
+           $(pull).on('click', function(e) {
+               e.preventDefault();
+               menu.slideToggle();
+           });
+       });
+
+       // $(window).resize(function(){
+       //     var w = $(window).width();
+       //     if(w > 320 && menu.is(':hidden')) {
+       //         menu.removeAttr('style');
+       //     }
+       // });
+   </script>
+</body>
+</html>
