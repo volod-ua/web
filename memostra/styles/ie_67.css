@@ -1,0 +1,14 @@
+/* Style for IE 6, 7 */
+
+#topmenu {
+	height: 43px;
+}
+
+#search div {
+	border: none;
+	margin-top: 0;
+}
+
+#search div input {
+	height: 20px;
+}

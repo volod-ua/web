@@ -1,0 +1,331 @@
+/* Main Style */
+
+body {
+	font-family: Arial, "Times New Roman", sans-serif;
+	font-size: 12pt;
+	margin: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.right {
+	text-align: right;
+}
+
+/* Logo */
+
+#logo table {
+	width: 100%;
+}
+
+#logo p {
+	font-style: italic;
+	margin: 0;
+}
+
+.gray {
+	color: #858586;
+}
+
+.green {
+	color: #779956;
+	font-weight: bold;
+}
+
+/* Top Menu */
+
+#topmenu {
+	background-color: #548bc5;
+	margin-top: 20px;
+}
+
+#topmenu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#topmenu ul li {
+	float: left;
+	list-style: none;
+}
+
+#topmenu ul li a {
+	color: #fff;
+	font-size: 125%;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#topmenu ul li.active, #topmenu ul li a:hover {
+	background-color: #375c84;
+}
+
+#top_icon {
+	float: right;
+	margin: 12px 12px 0 0;
+}
+
+#top_icon a {
+	text-decoration: none;
+}
+
+#top_icon a img {
+	border: none;
+}
+
+/* Header */
+
+#header {
+	margin-top: 15px;
+}
+
+#header img {
+	width: 960px;
+}
+
+#content_header {
+	float: right;
+	height: 1px;
+	position: relative;
+	right: 20px;
+	text-align: right;
+	top: -155px;
+}
+
+#content_header h1, #content_header h3 {
+	margin: 0;
+}
+
+#content_header h1 {
+	color: #688fb1;
+	font-size: 220%;
+}
+
+#content_header h3 {
+	color: #91a9bd;
+	font-size: 110%;
+}
+
+#content_header p {
+	margin-top: 30px;
+}
+
+#content_header a {
+	background-color: #d8812e;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+/* Menu and Search */
+
+#menu {
+	margin-top: 15px;
+}
+
+#menu table {
+	width: 100%;
+}
+
+#menu table table{
+	width: auto;
+}
+
+#menu .right{
+	text-align: right;
+}
+
+#menu td a {
+	border: 1px solid #dddddc;
+	background-color: #ececec;
+	color: #a0a0a0;
+	display: block;
+	font-weight: bold;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#menu td.active a, #menu td a:hover {
+	border: 1px solid #cde1f1;
+	background-color: #e2ecf4;
+	color: #3b638f;
+}
+
+#search {
+	float: right;
+}
+
+#search div {
+	background-color: #aec697;
+	margin-top: -4px;
+	padding: 1px;
+}
+
+#search div input {
+	border: 3px solid #cbddbb;
+	color: #989898;
+	height: 25px;
+	padding-left: 5px;
+	width: 200px;
+}
+
+.separator {
+	border-top: 1px dashed #b6c6dd;
+	height: 1px;
+	margin: 15px 0;
+	width: 100%
+}
+
+/* Products */
+
+#products table {
+	width: 100%;
+}
+
+#products table table {
+	width: auto;
+}
+
+#products .center table {
+	margin: 0 auto;
+}
+
+#products .right table {
+	text-align: left;
+	float: right;
+}
+
+#products p {
+	margin: 5px 0;
+}
+
+#products .title {
+	color: #3b638f;
+	font-weight: bold;
+}
+
+#products .image {
+	border: 1px solid #cde1f1;
+	text-align: center;
+}
+
+#products .image div {
+	border: 9px solid #e2ecf4;
+}
+
+#products .image img {
+	height: 290px;
+	margin-bottom: -4px;
+	width: 290px;
+}
+
+#products .price, #products .code {
+	font-weight: bold;
+}
+
+#products .price, #products .code {
+	color: #464646;
+}
+
+#products .price span {
+	color: #669048;
+}
+
+#products .code {
+	text-align: right;
+}
+
+#products .code span {
+	color: #676767;
+}
+
+/* Pagimation */
+
+#pagination table {
+	background-color: #e2ecf4;
+	padding: 2px;
+	width: 100%;
+}
+
+#pagination .left, #pagination .right {
+	width: 20%;
+}
+
+#pagination table a {
+	background-color: #acbece;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#pagination td.active a, #pagination td a:hover {
+	background-color: #538bc5;
+}
+
+#pagination #pages {
+	margin: 0 auto;
+	width: auto;
+}
+
+#pagination #pages a {
+	background-color: #538bc5;
+}
+
+#pagination #pages td.active a, #pagination #pages td a:hover {
+	background-color: #375c84;
+}
+
+/* Footer */
+
+#footer {
+	font-size: 90%;
+}
+
+#footer p {
+	color: #638489;
+	margin: 0;
+}
+
+#footer a {
+	color: #38565a;
+	text-decoration: none;
+}
+
+#footer table {
+	width: 100%;
+}
+
+#footer table td {
+	vertical-align: top;
+}
+
+#footer table table {
+	float: right;
+	width: auto;
+}
+
+#footer table table a {
+	color: #638489;
+}
+
+#footer table table td {
+	border-right: 1px solid #638489;
+	padding: 0 5px;
+}
+
+#footer .last {
+	border: none;
+	padding: 0;
+}

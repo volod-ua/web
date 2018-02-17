@@ -1,0 +1,11 @@
+/* Style for IE 6 */
+
+#header {
+	position: relative;
+}
+
+#content_header {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
