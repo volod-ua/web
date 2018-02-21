@@ -1,6 +1,6 @@
 $(function() {
     var pull        = $('#pull'),
-        menu        = $('.main-menu ul');
+        menu        = $('.main-menu > ul');
 
     $(pull).on('click', function(e) {
         e.preventDefault();
