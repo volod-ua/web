@@ -1,0 +1,190 @@
+/* http://www.hyundai.ru/Solaris */
+
+/* Синій        #325488 */
+/* Сірий        #cfcfcf */
+/* Червоний     #c64040 */
+/* Чорний       #08090b */
+/* Білий        #f0f0f0 */
+/* Оранжевий    #d87c5a */
+/* Графітовий   #7f7f7f */
+
+/* Basic settings
+ ***********************************************/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 980px;
+}
+
+/* Grid
+ ******************************************************/
+.row {
+    margin-bottom: 30px;
+}
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.row > *:first-child {
+    padding-left: 0;
+}
+.row > *:last-child {
+    padding-right: 0;
+}
+.col-1-of-3 {
+    float: left;
+    width: 33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Image holder
+ ******************************************************/
+.imgHolder {
+    position: relative;
+    background: url("../img/bg-img-holder.png");
+    background-repeat: no-repeat;
+    background-position: center top 15%;
+    background-size: contain;
+    text-align: center;
+}
+.model-summary {
+    background: rgba(90, 180, 255, 0.1);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 15px;
+    width: 25%;
+    text-align: left;
+}
+.model-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #17a9f1;
+}
+.model-specs {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #656565;
+}
+.model-price {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6bbd48;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1b75d8;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+    -webkit-transition: background-color 0.15s;
+       -moz-transition: background-color 0.15s;
+         -o-transition: background-color 0.15s;
+            transition: background-color 0.15s;
+}
+.button:hover {
+    background-color: rgb(20, 90, 160);
+}
+
+/* Auto Form
+ ******************************************************/
+#autoForm {
+    border: 5px solid #efefef;
+    padding: 15px;
+}
+#autoForm h2 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+#autoForm h4 {
+    margin: 15px 0 20px 0;
+}
+.form-block {
+    margin-bottom: 15px;
+}
+.form-block input, .form-block label {
+    cursor: pointer;
+}
+.colorsSelector:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.colorItem {
+    float: left;
+    margin: 5px 15px 5px 0;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transition: all 0.1s;
+       -moz-transition: all 0.1s;
+         -o-transition: all 0.1s;
+            transition: all 0.1s;
+}
+.colorItem:hover {
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
+}
+.colorBlue {
+    background-color: #325488;
+}
+.colorGray {
+    background-color: #cfcfcf;
+}
+.colorRed {
+    background-color: #c64040;
+}
+.colorBlack {
+    background-color: #08090b;
+}
+.colorWhite {
+    background-color: #f0f0f0;
+}
+.colorOrange {
+    background-color: #d87c5a;
+}
+.colorGraphite {
+    background-color: #7f7f7f;
+}
+
+@media screen and (max-width: 800px) {
+
+    .col-1-of-3 {
+        float: none;
+        margin-bottom: 30px;
+        padding: 0;
+        width: 100%;
+    }
+    .model-summary {
+        position: relative;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
