@@ -1,2 +1,2 @@
-# web
+# web-pages
 HTML/CSS pages
